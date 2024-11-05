@@ -1,7 +1,7 @@
 // Base configuration for API calls
 const API_CONFIG = {
-  //   BASE_URL: process.env.REACT_APP_API_BASE_URL || "https://api.hotelzify.com",
-  BASE_URL: " ",
+  BASE_URL: process.env.REACT_APP_API_BASE_URL || "https://api.hotelzify.com",
+  //   BASE_URL: " ",
   AUTH_TOKEN: process.env.REACT_APP_AUTH_TOKEN,
   ENDPOINTS: {
     CHAT: "/hotel/authorised/v1/chatbot-widget/messages",
