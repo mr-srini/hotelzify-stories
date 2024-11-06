@@ -10,7 +10,6 @@ const API_CONFIG = {
     CONVERSATION: "/hotel/authorised/v1/chatbot-widget/conversation",
   },
   DEFAULT_HEADERS: {
-    Accept: "application/json",
     "Content-Type": "application/json",
   },
 };
@@ -22,11 +21,6 @@ const API_CONFIG = {
 const createHeaders = () => ({
   ...API_CONFIG.DEFAULT_HEADERS,
   Authorization: `Bearer ${API_CONFIG.AUTH_TOKEN}`,
-  "Cache-Control": "no-cache",
-  Pragma: "no-cache",
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type, Authorization",
 });
 
 /**
