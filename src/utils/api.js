@@ -90,8 +90,6 @@ export const fetchConversationData = async (conversationId, options = {}) => {
       {
         method: "GET",
         headers: createHeaders(),
-        mode: "cors", // Add this
-        credentials: "include", // A
       }
     );
 
